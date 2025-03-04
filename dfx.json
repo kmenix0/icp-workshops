@@ -1,0 +1,27 @@
+{
+  "canisters": {
+    "my_project_backend": {
+      "candid": "src/my_project_backend/my_project_backend.did",
+      "package": "my_project_backend",
+      "type": "rust"
+    },
+    "my_project_frontend": {
+      "dependencies": [
+        "my_project_backend"
+      ],
+      "source": [
+        "src/my_project_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "my_project_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
